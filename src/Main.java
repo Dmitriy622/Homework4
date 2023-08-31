@@ -57,18 +57,19 @@ public class Main {
         System.out.println("Задание 6");
         int totalSeating = 60;
         int total = 102;
-        int occupied = 48;
-        if (occupied <= totalSeating) {
-            int freeSeating = totalSeating - occupied;
-            System.out.println("В вагоне осталось свободных " +freeSeating +" мест для сидения");
+        int totalStanding = total - totalSeating;
+        int occupiedSeating = 25;
+        int occupiedStanding = 37;
+        int totalOccupied = occupiedSeating + occupiedStanding;
+        if (totalOccupied <= total) {
+            int freeSeating = totalSeating - occupiedSeating;
+            int freeStanding = totalStanding - occupiedStanding;
+            System.out.println("В вагоне осталось " + freeSeating +" свободных мест для сидения и " +freeStanding +" стоячих мест");
         }
-        if (occupied > totalSeating && occupied < total) {
-            int freeStandingPlaces = total - occupied;
-            System.out.println("В вагоне осталось " +freeStandingPlaces +" стоячих мест/а");
-        }
-        if (occupied >= total) {
+        else {
             System.out.println("В вагоне нет свободных мест");
         }
+
 
         System.out.println("Задание 7");
         int one = 25;
