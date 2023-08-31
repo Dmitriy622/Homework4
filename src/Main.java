@@ -5,7 +5,7 @@ public class Main {
         if (age >= 18) {
             System.out.println("Если возраст человека равен " +age +" то, он совершеннолетний");
         }
-        if (age < 18) {
+        else {
             System.out.println("Если возраст человека равен " +age +" то, он не достиг совершеннолетия, нужно немного подождать");
         }
 
@@ -14,16 +14,16 @@ public class Main {
         if (temperature >= 5) {
             System.out.println("Сегодня тепло, можно идти без шапки");
         }
-        if (temperature < 5) {
+        else {
             System.out.println("На улице холодно, нужно надеть шапку");
         }
 
         System.out.println("Задание 3");
         int speed = 75;
-        if (speed >= 60) {
+        if (speed > 60) {
             System.out.println("Если скорость " +speed +" , то придется заплатить штраф");
         }
-        if (speed < 60) {
+        else {
             System.out.println("Если скорость " +speed +" , то можно ездить спокойно");
         }
 
@@ -58,8 +58,8 @@ public class Main {
         int totalSeating = 60;
         int total = 102;
         int totalStanding = total - totalSeating;
-        int occupiedSeating = 60;
-        int occupiedStanding = 42;
+        int occupiedSeating = 25;
+        int occupiedStanding = 12;
         int totalOccupied = occupiedSeating + occupiedStanding;
         if (totalOccupied < total) {
             int freeSeating = totalSeating - occupiedSeating;
