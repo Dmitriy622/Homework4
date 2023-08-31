@@ -58,10 +58,10 @@ public class Main {
         int totalSeating = 60;
         int total = 102;
         int totalStanding = total - totalSeating;
-        int occupiedSeating = 25;
-        int occupiedStanding = 37;
+        int occupiedSeating = 60;
+        int occupiedStanding = 42;
         int totalOccupied = occupiedSeating + occupiedStanding;
-        if (totalOccupied <= total) {
+        if (totalOccupied < total) {
             int freeSeating = totalSeating - occupiedSeating;
             int freeStanding = totalStanding - occupiedStanding;
             System.out.println("В вагоне осталось " + freeSeating +" свободных мест для сидения и " +freeStanding +" стоячих мест");
